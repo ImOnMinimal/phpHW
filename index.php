@@ -9,52 +9,62 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <form action="" method="GET">
+        <!-- Вам есть 18?
+        <input type="hidden" name="flag" value="0">
+        <input type="checkbox" name="flag" value="1">
+        <input type="submit"> -->
+
+        <!-- ам или цм <br>
+        <input type="hidden" name="flag" value="0">
+        ам <input type="radio" name="flag" value="1"> <br>
+        цм <input type="radio" name="flag" value="2">
+        <input type="submit"> -->
+
+        Choose your language <br>
+        <select name="test">
+            <option value="1">Русский</option>
+            <option value="2">English</option>
+            <option value="3">Deutsch</option>
+        </select>
+        <input type="submit">
+    </form>
     <?php
-        // $date = '31.12.2013';
-        // echo strtr($date,'.','-')
-
-        // $str = "abccab";
-        // $str = str_replace("a", "1", $str);
-        // $str = str_replace("b", "2", $str);
-        // $str = str_replace("c", "3", $str);
-        // echo $str;
-
-        // $str = "j2d1i42k34325f5312j3fg";
-        // $str = str_replace("1", "", $str);
-        // $str = str_replace("2", "", $str);
-        // $str = str_replace("3", "", $str);
-        // $str = str_replace("4", "", $str);
-        // $str = str_replace("5", "", $str);
-        // $str = str_replace("6", "", $str);
-        // $str = str_replace("7", "", $str);
-        // $str = str_replace("8", "", $str);
-        // $str = str_replace("9", "", $str);
-        // echo $str
-
-        // $str = 'abc abc abc';
-        // echo strpos($str, 'b');
-
-        // $str = 'abc abc abc';
-        // echo strrpos($str, 'b');
-
-        // $array = array ('1','2','3','4','5');
-        // $result;
-        // foreach ($array as $value){
-        //     $sum = sqrt($value) + $result;
-        // }
-        // echo $result;
-
-        // $array = array ('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', '<strong>Суббота</strong>', '<strong>Воскресенье</strong>');
-        // foreach ($array as $value){
-        //     echo "$value <br>";
-        // }
-
-        // $array = array ('10','20','30','50','235','3000');
-        // foreach ($array as $value){
-        //     if($value[0]==1||$value[0]==2||$value[0]==5){
-        //         echo $value;
+        // if (!empty($_GET)){
+        //     if ($_GET['flag']==='1'){
+        //         echo 'Доступ к сайту разрешён';
+        //     }
+        //     else{
+        //         echo 'Доступ к сайту запрещён, ю ар ту шмол';
         //     }
         // }
+
+        // if (!empty($_GET)){
+        //     if ($_GET['flag']==='1'){
+        //         echo '800гпм';
+        //     }
+        //     else if($_GET['flag']==='2'){
+        //         echo '5-pos няшчка';
+        //     }
+        // }
+
+        if (!empty($_GET)){
+            if ($_GET['test']==='1'){
+                echo '<strong>Карла</strong> (англ. Karla) — персонаж-торговец в игре Dark Souls III.<br><br>
+                <strong>Местонахождение</strong> <br>
+                Изначально находится в одной из запертых камер в Подземельях Иритилла, камера на нижнем ярусе, где бродит много тюремщиков. Для её освобождения потребуются соответствующие ключи. Если Негорящий согласится взять её на службу, то после произнесения клятвы перемещается в Храм огня.';
+            }
+            else if($_GET['test']==='2'){
+                echo '<strong>Karla</strong> — is a merchant character in the game Dark Souls III.<br><br>
+                <strong>Location</strong> <br>
+                Initially, it is located in one of the locked cells in the Dungeons of Irithilla, a cell on the lower tier, where many jailers roam. To release it, you will need the appropriate keys. If the Unlit agrees to take her into service, then after the oath is pronounced, she moves to the Temple of Fire.';
+            }
+            else if($_GET['test']==='3'){
+                echo '<strong>Carla</strong> (engl. Karla) — ist ein Händlercharakter im Spiel Dark Souls III.<br><br>
+                <strong>Standort</strong> <br>
+                Sie befindet sich ursprünglich in einer der verschlossenen Zellen in Iritilla-Dungeons, einer Zelle auf der unteren Ebene, in der viele Gefängnisinsassen herumlaufen. Die entsprechenden Schlüssel werden benötigt, um sie freizugeben. Wenn der nicht Brennende bereit ist, ihn zum Dienst zu nehmen, bewegt er sich nach dem Aussprechen des Eides in den Tempel des Feuers.';
+            }
+        }
     ?>
 </body>
 </html>
