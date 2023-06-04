@@ -9,25 +9,65 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- <form metod="GET" action="">
+        Login: <input type="text" name="login"><br>
+        Password: <input type="text" name="password"><br>
+        Email: <input type="text" name="email"><br>
+        <input type="submit">
+    </form> -->
+
+    <!-- <div>
+        вареники<br>
+        <form method="POST" action=""><input type="submit" name="food"></form><br><br>
+    </div>
+    <div>
+        пельмени<br>
+        <form method="POST" action=""><input type="submit" name="food"></form><br><br>
+    </div>
+    <div>
+        кириешки<br>
+        <form method="POST" action=""><input type="submit" name="food"></form><br><br>
+    </div> -->
     <?php
-        $arr=[1,2,3,4,5,6];
-        $fhalf=count($arr)/2;
-        $farr = array_slice($arr, 0, $fhalf);
-        foreach($farr as $value){
-            $fsum+=$value;
-        }
-        echo $fsum;
-        echo '<br>';
+        // setcookie("delCok", '1', time()+60);
+        // setcookie("delCok", '', time());
+        // var_dump($_COOKIE['delCok'])
+
+        // setcookie("visited1", "index.php visited <br>", time()+60);
         
-        $sarr = array_slice($arr, $fhalf, count($arr));
-        foreach($sarr as $value){
-            $ssum+=$value;
-        }
-        echo $ssum;
-        echo '<br>';
+        // setcookie("exit", false, time()+60);
+        // $login = $_GET['login'];
+        // $password = $_GET['password'];
+        // $email = $_GET['email'];
+        // $login = urldecode($login);
+        // $login = strip_tags($login);
+        // $login = trim($login, "+&=/");
+        // $login = strtr($login, "+&=/", '    ');
+        // $password = urldecode($password);
+        // $password = strip_tags($password);
+        // $password = trim($password, "+&=/");
+        // $password = strtr($password, "+&=/", '    ');
+        // $email = urldecode($email);
+        // $email = strip_tags($email);
+        // $email = trim($email, "+&=/");
+        // $email = strtr($email, "+&=/", '    ');
+        // if(!empty($login&$password&$email)){
+        //     $_COOKIE['exit'] = true;
+        // };
+        // if($_COOKIE['exit']==true){
+        //     echo "<form method='POST' action='index.php'><input type='submit' value='Выход' name='exitSubmit'></form>";
+        // };
+        // if(!empty($_POST['exitSubmit'])){
+        //     unset($_COOKIE['exit']);
+        // };
+
+        // session_start();
+        // if(isset($_POST['food'])){
+        //     $_SESSION['test'] += 1;
+        // }
+        // echo $_SESSION['test'];
 
 
-        echo $fsum/$ssum
     ?>
 </body>
 </html>
