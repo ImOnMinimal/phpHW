@@ -11,7 +11,13 @@
 <body>
     
     <?php
-        setcookie("visited2", "index.php2 visited <br>", time()+60);
+        session_start();
+        echo "<ul>";
+        foreach ($_SESSION['test'] as $value){
+            echo "<li>$value</li>";
+        }
+        echo "</ul>";
+        echo "<a href='index.php'>view</a>";
     ?>
 </body>
 </html>
