@@ -27,7 +27,7 @@
 
 
 
-        
+
         // if(isset($_GET['rebirth'])){
         //     $click = 0;
         //     setcookie('click', 0, time()+60*60*24*365);
@@ -68,7 +68,7 @@
         // echo "$rank <br>";
         // echo "<form><input type='image' src='./cookie.png' widht='250px'/></form><br>";
         // echo "$click <br>";
-        // if($click>=20){
+        // if($click>=200){
         //     echo "<form method='GET'><input type='submit' value='rebirth' name='rebirth'></form>";
         // }
 
